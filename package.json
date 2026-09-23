@@ -1,0 +1,59 @@
+{
+  "name": "@deunobicho/mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Deu no Bicho — real-time Brazilian jogo do bicho + Loteria Federal data for Claude Desktop, Cursor, and any MCP-compatible AI app.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "deunobicho-mcp": "dist/index.js"
+  },
+  "type": "module",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "anthropic",
+    "claude-desktop",
+    "cursor",
+    "jogo-do-bicho",
+    "loteria-federal",
+    "brazilian-lottery",
+    "livro-dos-sonhos",
+    "ai-tools",
+    "llm-tools",
+    "typescript"
+  ],
+  "homepage": "https://deunobicho.online/mcp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/athos-alexandre/deunobicho-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/athos-alexandre/deunobicho-mcp/issues"
+  },
+  "author": "Athos Alexandre <editorial@deunobicho.online> (https://deunobicho.online)",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "typescript": "^5.4.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
